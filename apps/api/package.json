@@ -1,0 +1,14 @@
+{
+  "name": "@pixel-rises/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "@pixel-rises/config": "workspace:*",
+    "@pixel-rises/database": "workspace:*",
+    "@pixel-rises/types": "workspace:*",
+    "@pixel-rises/validation": "workspace:*"
+  }
+}

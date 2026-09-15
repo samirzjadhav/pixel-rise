@@ -173,6 +173,52 @@ importers:
         specifier: ^5.9.3
         version: 5.9.3
 
+  apps/api:
+    dependencies:
+      '@pixel-rises/config':
+        specifier: workspace:*
+        version: link:../../packages/config
+      '@pixel-rises/database':
+        specifier: workspace:*
+        version: link:../../packages/database
+      '@pixel-rises/types':
+        specifier: workspace:*
+        version: link:../../packages/types
+      '@pixel-rises/validation':
+        specifier: workspace:*
+        version: link:../../packages/validation
+
+  apps/web:
+    dependencies:
+      '@pixel-rises/config':
+        specifier: workspace:*
+        version: link:../../packages/config
+      '@pixel-rises/types':
+        specifier: workspace:*
+        version: link:../../packages/types
+      '@pixel-rises/validation':
+        specifier: workspace:*
+        version: link:../../packages/validation
+
+  packages/config: {}
+
+  packages/database:
+    dependencies:
+      '@pixel-rises/config':
+        specifier: workspace:*
+        version: link:../config
+      '@pixel-rises/types':
+        specifier: workspace:*
+        version: link:../types
+
+  packages/types: {}
+
+  packages/validation:
+    dependencies:
+      '@pixel-rises/types':
+        specifier: workspace:*
+        version: link:../types
+
 packages:
 
   '@types/node@24.13.4':

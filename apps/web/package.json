@@ -1,0 +1,13 @@
+{
+  "name": "@pixel-rises/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "@pixel-rises/config": "workspace:*",
+    "@pixel-rises/types": "workspace:*",
+    "@pixel-rises/validation": "workspace:*"
+  }
+}
