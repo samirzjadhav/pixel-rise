@@ -1,0 +1,20 @@
+{
+  "name": "pixel-rises",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pixel Rise",
+  "type": "module",
+  "packageManager": "pnpm@12.4.1",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "clean": "node --eval \"fs.rmSync('dist', { recursive: true, force: true })\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
